@@ -1,0 +1,31 @@
+.navbar {
+  padding: 10px 20px;
+  margin-bottom: 30px;
+}
+
+.content {
+  display: flex;
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+.details {
+  width: 100%;
+  padding: 0 30px 20px;
+}
+
+.variants {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+@media only screen and (max-width: 700px) {
+  .imageWrapper {
+    display: flex;
+    justify-content: center;
+  }
+  .content {
+    flex-direction: column;
+  }
+}

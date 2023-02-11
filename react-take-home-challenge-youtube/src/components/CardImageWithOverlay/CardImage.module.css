@@ -1,0 +1,39 @@
+.card {
+  min-width: 300px;
+  min-height: 300px;
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  box-shadow: 2px 2px 5px #b3b3b3;
+}
+
+.imageWrapper {
+  position: relative;
+  border: 1px solid #f0f3f7;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.imageWrapper:hover > .overlayWrapper {
+  visibility: visible;
+}
+
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.title {
+  text-align: center;
+}
+
+.overlayWrapper {
+  position: absolute;
+  visibility: hidden;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(255, 255, 255, 0.5);
+}
