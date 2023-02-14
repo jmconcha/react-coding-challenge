@@ -1,0 +1,7 @@
+.box {
+  position: absolute;
+  width: 10px;
+  aspect-ratio: 1;
+  background-color: black;
+  border-radius: 50%;
+}
