@@ -1,0 +1,19 @@
+.ShopCounter {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  border: 1px solid black;
+  padding: 20px;
+}
+
+.ShopCounter h4 {
+  text-align: center;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.ShopCounter .customerInLineWrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}

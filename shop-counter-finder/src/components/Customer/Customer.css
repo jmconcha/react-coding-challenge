@@ -1,0 +1,9 @@
+.Customer {
+  width: 100%;
+  border: 1px solid black;
+  text-align: center;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  font-weight: 600;
+  font-size: 2rem;
+}
