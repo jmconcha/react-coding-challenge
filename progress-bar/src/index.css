@@ -1,0 +1,23 @@
+body {
+  font-family: sans-serif;
+}
+
+.progress-bar-container {
+  margin-top: 10px;
+  height: 10px;
+  width: 100%;
+  background-color: #ccc;
+}
+
+.progress-bar-percent {
+  height: 10px;
+  width: 0%;
+  background-color: green;
+  animation: progress 2s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes progress {
+  from { width: 0; }
+  to { width: 100%; }
+}
