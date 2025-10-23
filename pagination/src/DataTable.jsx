@@ -1,0 +1,37 @@
+import { useState } from 'react';
+import users from './data/users';
+
+export default function DataTable({ perPage, page }) {
+  const [message, setMessage] = useState('Data Table');
+  const currentPage = users.slice(page * perPage - perPage, page * perPage,);
+
+  return (
+    <div>
+      <h1>{message}</h1>
+      <table>
+        <thead>
+          <tr>
+            {[
+              { label: 'ID', key: 'id' },
+              { label: 'Name', key: 'name' },
+              { label: 'Age', key: 'age' },
+              { label: 'Occupation', key: 'occupation' },
+            ].map(({ label, key }) => (
+              <th key={key}>{label}</th>
+            ))}
+          </tr>
+        </thead>
+        <tbody>
+          {currentPage.map(({ id, name, age, occupation }) => (
+            <tr key={id}>
+              <td>{id}</td>
+              <td>{name}</td>
+              <td>{age}</td>
+              <td>{occupation}</td>
+            </tr>
+          ))}
+        </tbody>
+      </table>
+    </div>
+  );
+}
