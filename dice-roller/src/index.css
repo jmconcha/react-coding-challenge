@@ -1,0 +1,111 @@
+body {
+  font-family: sans-serif;
+}
+
+.rolls-result-container {
+  width: 220px;
+  border: 1px solid gray;
+  border-radius: 15px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 15px;
+  background-color: #f4f4f4;
+  
+}
+
+.dice-container {
+  box-sizing: border-box;
+  border: 1px solid black;
+  display: flex;
+  width: 60px;
+  height: 60px;
+  border-radius: 10px;
+  background-color: #fff;
+  padding: 6px;
+}
+
+.dice-circle {
+  background-color: black;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+}
+
+.dice-1 {
+  justify-content: center;
+  align-items: center;
+}
+
+.dice-2 {
+  justify-content: space-between;
+}
+
+.dice-2 .dice-circle-1 {
+  align-self: flex-end;
+}
+
+.dice-3 {
+  justify-content: space-between;
+}
+
+.dice-3 .dice-circle-1 {
+  align-self: flex-end;
+}
+
+.dice-3 .dice-circle-2 {
+  align-self: center;
+}
+
+.dice-4 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 20px;
+}
+
+.dice-5 {
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 20px;
+}
+
+.dice-5 .dice-circle-5 {
+  position: absolute;
+  left: 30px;
+  top: 30px;
+  transform: translate(-50%, -50%);
+}
+
+.dice-6 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 5px 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
